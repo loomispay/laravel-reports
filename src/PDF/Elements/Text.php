@@ -2,7 +2,7 @@
 
 namespace Leadout\Reports\PDF\Elements;
 
-use setasign\Fpdi\Fpdi;
+use FPDI;
 
 class Text implements Contract
 {
@@ -81,7 +81,7 @@ class Text implements Contract
     /**
      * Render the element onto the given PDF.
      *
-     * @param Fpdi $pdf the PDF.
+     * @param FPDI $pdf the PDF.
      * @return void
      */
     public function render($pdf)

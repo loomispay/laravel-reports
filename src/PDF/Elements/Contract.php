@@ -2,14 +2,14 @@
 
 namespace Leadout\Reports\PDF\Elements;
 
-use setasign\Fpdi\Fpdi;
+use FPDI;
 
 interface Contract
 {
     /**
      * Render the element onto the given PDF.
      *
-     * @param Fpdi $pdf the PDF.
+     * @param FPDI $pdf the PDF.
      * @return void
      */
     public function render($pdf);
