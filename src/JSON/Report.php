@@ -2,7 +2,7 @@
 
 namespace Leadout\Reports\JSON;
 
-use Leadout\Reports\Formats\Report as BaseReport;
+use Leadout\Reports\Report as BaseReport;
 use Illuminate\Support\Collection;
 
 class Report extends BaseReport

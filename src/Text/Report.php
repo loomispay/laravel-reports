@@ -2,7 +2,7 @@
 
 namespace Leadout\Reports\Text;
 
-use Leadout\Reports\Formats\DownloadableReport;
+use Leadout\Reports\DownloadableReport;
 
 class Report extends DownloadableReport
 {

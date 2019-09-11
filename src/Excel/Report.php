@@ -3,7 +3,7 @@
 namespace Leadout\Reports\Excel;
 
 use Illuminate\Support\Collection;
-use Leadout\Reports\Formats\DownloadableReport;
+use Leadout\Reports\DownloadableReport;
 
 class Report extends DownloadableReport
 {
