@@ -56,10 +56,8 @@ class Report extends DownloadableReport
 
         $pdf->setSourceFile($this->source);
 
-        //$pdf->setPrintHeader(false);
+        $pdf->SetFont('Helvetica');
 
-        $pdf->SetFont('Times');
-        
         $pdf->SetFontSize($this->fontSize);
 
         $this->render($pdf);
