@@ -56,7 +56,7 @@ class Report extends DownloadableReport
 
         $pdf->setSourceFile($this->source);
 
-        $pdf->setPrintHeader(false);
+        //$pdf->setPrintHeader(false);
 
         $pdf->SetFontSize($this->fontSize);
 
