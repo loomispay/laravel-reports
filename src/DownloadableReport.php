@@ -1,6 +1,6 @@
 <?php
 
-namespace Leadout\Reports\Formats;
+namespace Leadout\Reports;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;

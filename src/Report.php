@@ -1,6 +1,6 @@
 <?php
 
-namespace Leadout\Reports\Formats;
+namespace Leadout\Reports;
 
 use Illuminate\Contracts\Support\Responsable;
 use Illuminate\Http\Request;

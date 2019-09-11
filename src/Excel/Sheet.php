@@ -1,6 +1,6 @@
 <?php
 
-namespace Leadout\Reports\Formats\Excel;
+namespace Leadout\Reports\Excel;
 
 use Illuminate\Support\Collection;
 use Maatwebsite\Excel\Concerns\FromArray;

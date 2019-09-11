@@ -1,6 +1,6 @@
 <?php
 
-namespace Leadout\Reports\Formats\JSON;
+namespace Leadout\Reports\JSON;
 
 use Leadout\Reports\Formats\Report as BaseReport;
 use Illuminate\Support\Collection;

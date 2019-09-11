@@ -1,6 +1,6 @@
 <?php
 
-namespace Leadout\Reports\Formats\Text;
+namespace Leadout\Reports\Text;
 
 use Leadout\Reports\Formats\DownloadableReport;
 
