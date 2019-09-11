@@ -53,7 +53,7 @@ class Report extends DownloadableReport
      */
     public function output()
     {
-        return (new Spreadsheet($this->sheets))->download()->content();
+        return (new Spreadsheet($this->sheets))->download($this->filename)->content();
     }
 
     /**
