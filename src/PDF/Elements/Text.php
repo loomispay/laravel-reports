@@ -88,6 +88,6 @@ class Text implements Contract
     {
         $pdf->SetXY($this->x, $this->y);
 
-        $pdf->Multicell($this->width, $this->height, $this->content, 0, '');
+        $pdf->Multicell($this->width, $this->height, utf8_decode($this->content), 0, '');
     }
 }
