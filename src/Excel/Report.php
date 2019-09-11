@@ -56,6 +56,11 @@ class Report extends DownloadableReport
         return stream_get_contents($this->getStream());
     }
 
+    /**
+     * Get a stream containing the report.
+     *
+     * @return bool|resource the stream.
+     */
     private function getStream()
     {
         return fopen((new Spreadsheet($this->sheets))->download($this->filename())->getFile()->getPathname(), 'rb');
