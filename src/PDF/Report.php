@@ -58,6 +58,8 @@ class Report extends DownloadableReport
 
         //$pdf->setPrintHeader(false);
 
+        $pdf->SetFont('Times');
+        
         $pdf->SetFontSize($this->fontSize);
 
         $this->render($pdf);
