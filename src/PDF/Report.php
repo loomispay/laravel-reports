@@ -55,9 +55,7 @@ class Report extends DownloadableReport
         $pdf = new Fpdi;
 
         $pdf->setSourceFile($this->source);
-
-        $pdf->setPrintHeader(false);
-
+        
         $pdf->SetFontSize($this->fontSize);
 
         $this->render($pdf);
