@@ -53,7 +53,12 @@ class Report extends DownloadableReport
      */
     public function output()
     {
-        return (new Spreadsheet($this->sheets))->download($this->filename())->getContent();
+        return stream_get_contents($this->getStream());
+    }
+
+    private function getStream()
+    {
+        return fopen((new Spreadsheet($this->sheets))->download($this->filename())->getFile()->getPathname(), 'rb');
     }
 
     /**
