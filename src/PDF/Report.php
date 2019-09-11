@@ -2,9 +2,9 @@
 
 namespace Leadout\Reports\PDF;
 
-use FPDI;
 use Illuminate\Support\Collection;
 use Leadout\Reports\DownloadableReport;
+use setasign\Fpdi\Fpdi;
 
 class Report extends DownloadableReport
 {
@@ -48,11 +48,11 @@ class Report extends DownloadableReport
     /**
      * Get the PDF representation of the document.
      *
-     * @return FPDI the PDF representation.
+     * @return Fpdi the PDF representation.
      */
     public function getPDF()
     {
-        $pdf = new FPDI;
+        $pdf = new Fpdi;
 
         $pdf->setSourceFile($this->source);
 
@@ -68,7 +68,7 @@ class Report extends DownloadableReport
     /**
      * Render the document onto the given PDF.
      *
-     * @param FPDI $pdf the PDF.
+     * @param Fpdi $pdf the PDF.
      * @return void
      */
     private function render($pdf)

@@ -2,7 +2,7 @@
 
 namespace Leadout\Reports\PDF;
 
-use FPDI;
+use setasign\Fpdi\Fpdi;
 use Illuminate\Support\Collection;
 use Leadout\Reports\PDF\Elements\Contract;
 
@@ -33,7 +33,7 @@ class Page
     /**
      * Render the page onto the given PDF.
      *
-     * @param FPDI $pdf the PDF.
+     * @param Fpdi $pdf the PDF.
      * @return void
      */
     public function render($pdf)
