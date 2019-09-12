@@ -70,7 +70,7 @@ class Choice
 
     private function getPath($values)
     {
-        return __DIR__ . '/../../../img/' . (in_array($this->value, $values, true) ? 'checked-new.png' : 'unchecked-new.png');
+        return __DIR__ . '/../../../img/' . (in_array($this->value, $values, true) ? 'checked.png' : 'unchecked.png');
     }
 
     private function getX()
