@@ -38,7 +38,7 @@ class Checkbox implements Contract
      * @param mixed $values the values that the checkbox has.
      * @return Checkbox the new checkbox.
      */
-    public static function create($values = null)
+    public static function make($values = null)
     {
         return new static(is_array($values) ? $values : func_get_args());
     }
@@ -56,7 +56,7 @@ class Checkbox implements Contract
 
     public function addChoice($value, $x, $y)
     {
-        $this->choices->push(Choice::create($value, $x, $y));
+        $this->choices->push(Choice::make($value, $x, $y));
 
         return $this;
     }

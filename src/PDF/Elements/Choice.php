@@ -51,7 +51,7 @@ class Choice
      * @param float  $y     the Y coordinate of the choice on the page.
      * @return Choice the new choice.
      */
-    public static function create($value, $x, $y)
+    public static function make($value, $x, $y)
     {
         return new static($value, $x, $y);
     }
