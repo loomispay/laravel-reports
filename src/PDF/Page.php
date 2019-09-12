@@ -38,9 +38,14 @@ class Page
      */
     public function render($pdf)
     {
-        $this->elements->each(function($element) use ($pdf){
+        $this->getElements()->each(function($element) use ($pdf){
             /** @var Contract $element */
             $element->render($pdf);
         });
+    }
+
+    protected function getElements()
+    {
+        return $this->elements;
     }
 }
