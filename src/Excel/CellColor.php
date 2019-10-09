@@ -76,7 +76,7 @@ class CellColor
      */
     public function setColor($color)
     {
-        $this->color = ltrim('#', $color);
+        $this->color = ltrim($color, '#');
 
         return $this;
     }
