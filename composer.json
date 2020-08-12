@@ -7,7 +7,7 @@
         }
     ],
     "require": {
-        "illuminate/http": "^6.0",
+        "illuminate/http": "^6.0|^7.0",
         "maatwebsite/excel": "^3.1",
         "setasign/fpdf": "^1.8",
         "setasign/fpdi-tcpdf": "^2.2"
