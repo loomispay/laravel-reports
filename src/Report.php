@@ -30,6 +30,6 @@ abstract class Report implements Responsable
      */
     public function toResponse($request)
     {
-        return Response::create($this->output())->header('Content-Type', $this->mimeType());
+        return (new Response($this->output()))->header('Content-Type', $this->mimeType());
     }
 }
